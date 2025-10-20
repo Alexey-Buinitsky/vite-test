@@ -1,0 +1,33 @@
+@use '../helpers' as *;
+
+.footer {
+	display: flex;
+	flex-direction: column;
+	gap: var(--section-margin-y);
+
+	// &__nav {}
+
+	&__list {
+		display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: rem(16);
+	}
+
+	// &__item {}
+
+	&__link {
+		font-weight: 500;
+		color: var(--color-light);
+		opacity: .4;
+
+		&:hover {
+			color: var(--color-accent);
+			opacity: 1;
+		}
+	}
+
+	&__copyright {
+		color: var(--color-light);
+		opacity: .2;
+	}
+}

@@ -1,5 +1,4 @@
-import { AppBreadcrumb } from "./app-breadcrumb"
-import { AppTableActions } from "./app-table/app-table-actions"
+import { AppBreadcrumb, AppTableActions } from "../shared"
 import { Title } from "../ui"
 
 
