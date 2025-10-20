@@ -182,16 +182,6 @@ svg * {
     scroll-behavior: auto !important;
   }
 }
-/*
-100-Thin
-200-Extra light/Ultra light (Thin?)
-300-Light
-400-Regular (Normal)
-500-Medium
-600-Semibold
-700-Bold
-800-Extrabold
-*/
 @font-face {
   font-family: "Montserrat";
   src: url("../assets/fonts/Montserrat-Regular.woff2") format("woff2");
@@ -386,12 +376,6 @@ a[class] {
   height: 1.5rem;
 }
 
-.pagination-container {
-  display: flex;
-  flex-direction: column;
-  row-gap: 1rem;
-  margin-block: var(--section-margin-y);
-}
 .pagination__controls {
   display: flex;
   align-items: center;
@@ -410,9 +394,19 @@ a[class] {
 .pagination__button--long {
   width: 4rem;
 }
+.pagination__ellipsis {
+  pointer-events: none;
+}
 .pagination__info {
   color: var(--color-light);
   opacity: 0.5;
+}
+
+.pagination-container {
+  display: flex;
+  flex-direction: column;
+  row-gap: 1rem;
+  margin-block: var(--section-margin-y);
 }
 
 .breadcrumb__list {

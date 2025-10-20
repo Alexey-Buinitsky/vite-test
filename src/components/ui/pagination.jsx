@@ -3,7 +3,7 @@ import { Button } from './button'
 export function Pagination({ className, ...props }) {
   return (
     <nav 
-      aria-label="Навигация по страницам" 
+      aria-label="pagination" 
       data-slot="pagination" 
       className={['pagination', className].filter(Boolean).join(' ')} 
       {...props} 
@@ -21,12 +21,7 @@ export function PaginationControls({ className, ...props }) {
   )
 }
 
-export function PaginationButton({ 
-  className, 
-  isActive = false, 
-  isLong = false,
-  ...props 
-}) {
+export function PaginationButton({ className, isActive = false, isLong = false, ...props }) {
   const classNames = [
     'pagination__button',
     isActive && 'pagination__button--active',
@@ -44,11 +39,7 @@ export function PaginationButton({
   )
 }
 
-export function PaginationArrow({ 
-  className, 
-  direction = 'left', 
-  ...props 
-}) {
+export function PaginationArrow({ className, direction = 'left', ...props }) {
   const arrowSvg = {
     left: (
       <svg width="24" height="24" viewBox="0 0 24 24" fill="none">

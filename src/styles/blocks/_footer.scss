@@ -9,8 +9,8 @@
 
 	&__list {
 		display: grid;
-    grid-template-columns: repeat(5, 1fr);
-    gap: rem(16);
+		grid-template-columns: repeat(5, 1fr);
+		gap: rem(16);
 	}
 
 	// &__item {}
