@@ -234,7 +234,6 @@ svg * {
 
 .container {
   max-width: calc(var(--container-width) + var(--container-padding-x) * 2);
-  width: 100%;
   margin-inline: auto;
   padding: var(--container-padding-x);
 }
@@ -288,6 +287,7 @@ body {
   display: flex;
   flex-direction: column;
   flex-grow: 1;
+  width: 100%;
   overflow-x: hidden;
 }
 
