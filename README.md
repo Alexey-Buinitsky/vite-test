@@ -1,73 +1,44 @@
-# React + TypeScript + Vite
+// npm
+npm init vite@latest 
+npm i sass
+npm i react-router-dom
+npm i react-redux
+npm i @reduxjs/toolkit
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+//
+(npm i -g sass)
+sass --watch
+npm install react-slider - прайс слайдер 
+    (upd: При установке данного пакета при запуске run server всплывает ошибка 
+    "@babel/runtime/helpers/esm/extends" для этого устанавливаем еще один пакет -->
+        npm install --save @babel/runtime
+    )
+npm install react-content-loader - скелетон
+npm install --save @pbe/react-yandex-maps - карты
 
-Currently, two official plugins are available:
+// Git
+git init - создание локального репозитория
+git add . - добавление всех файлов проекта в index
+git commit -m <commit name> - создание коммита
+git remote add origin <url> - подключение удаленного репозитория
+git push -u origin <branch> - загрузка изменений из локальной ветки в удаленную с созданием связи между ними 
+(после связки веток, комманду -u можно упразднить (т.е git push, git pull))
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+git clone <url> - клонирование удаленного репозитория
 
-## React Compiler
+git branch - просмотр всех веток в локальном репозитории
+git branch -m <new branch name> - переименование текущей ветки
+git branch -d <branch name> - удаление (локальной) ветки(*не текущей)
+git push origin --delete <branch name> - удаление (удаленной) ветки
+git branch <branch name> - создание новой ветки
+git checkout <branch name> - переход в новую ветку
+git checkout -b <branch name> - создание и переход в новую ветку
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+git merge <feature branch name> - слияние другой ветки <feature branch name> в текущ
 
-## Expanding the ESLint configuration
+//TypeScript
+npm install --save-dev @types/swiper - типы для Swiper
+npm install --save-dev @types/react-slider - типы для Price-Slider
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
-
-```js
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-
-      // Remove tseslint.configs.recommended and replace with this
-      tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      tseslint.configs.stylisticTypeChecked,
-
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
-
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
-
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
-
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
+//Extra
+flex-grow: 1; min-width: 0; - если свайпер растягивается на огромную ширину, добавить свойства div-у который содержит в себе свайпер и является объектом применения display:flex
