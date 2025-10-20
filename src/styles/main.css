@@ -368,6 +368,7 @@ a[class] {
   display: flex;
   flex-direction: column;
   row-gap: 1rem;
+  margin-block: var(--section-margin-y);
 }
 .pagination__controls {
   display: flex;
