@@ -1,7 +1,7 @@
-import { Button } from "./components/ui/button"
+import { Button } from "./components/ui"
+import { AppPagination } from "./components/shared"
 
 function App() {
-
 	return (
 		<>
 			<div className="">
@@ -17,6 +17,7 @@ function App() {
 					</svg>
 				</Button>
 			</div>
+      <AppPagination />
 		</>
 	)
 }

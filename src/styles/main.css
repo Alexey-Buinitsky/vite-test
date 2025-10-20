@@ -278,6 +278,8 @@ svg * {
 body {
   display: flex;
   flex-direction: column;
+  font-size: 1rem;
+  font-weight: 400;
   font-family: var(--font-family-base);
   color: var(--color-text);
   background-color: var(--color-bg);
@@ -346,6 +348,33 @@ a[class] {
   background-color: var(--color-bg-input);
   border-radius: var(--border-radius);
   color: var(--color-text);
+}
+
+.pagination-container {
+  display: flex;
+  flex-direction: column;
+  row-gap: 1rem;
+}
+.pagination__controls {
+  display: flex;
+  align-items: center;
+  gap: 1.125rem;
+}
+.pagination__button {
+  color: var(--color-pagination);
+}
+.pagination__button--active {
+  background-color: var(--color-accent);
+  color: var(--color-text);
+}
+.pagination__button--arrow {
+  color: var(--color-text);
+}
+.pagination__button--long {
+  width: 4rem;
+}
+.pagination__info {
+  color: rgba(255, 255, 255, 0.5019607843);
 }
 
 /*# sourceMappingURL=main.css.map */

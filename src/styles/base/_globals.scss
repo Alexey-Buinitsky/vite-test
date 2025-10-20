@@ -3,6 +3,8 @@
 body {
 	display: flex;
 	flex-direction: column;
+	font-size: rem(16);
+	font-weight: 400;
 	font-family: var(--font-family-base);
 	color: var(--color-text);
 	background-color: var(--color-bg);
