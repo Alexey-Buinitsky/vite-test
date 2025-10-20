@@ -27,17 +27,17 @@
 		}
 
 		@include hover {
-      color: var(--color-light);
-      background-color: var(--color-accent);
+			color: var(--color-light);
+			background-color: var(--color-accent);
 
-      &::placeholder {
-        color: var(--color-light);
-      }
+			&::placeholder {
+				color: var(--color-light);
+			}
 
-      & ~ .input__content {
-        color: var(--color-light);
-      }
-    }
+			& ~ .input__content {
+				color: var(--color-light);
+			}
+		}
 
 		.input__wrapper--right & {
 			padding-right: rem(42);

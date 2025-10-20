@@ -1,6 +1,6 @@
 import { Pagination, PaginationControls, PaginationButton, PaginationArrow, PaginationEllipsis } from '../../ui'
 
-export const PaginationNav = ({className, currentPage, totalPages, visiblePages, onPageChange}) => {
+export const AppPaginationNav = ({className, currentPage, totalPages, visiblePages, onPageChange}) => {
     return (
         <Pagination className={className}>
             <PaginationControls>

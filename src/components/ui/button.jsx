@@ -5,9 +5,9 @@ function Button({ className, variant, children, ariaLabel, ...props }) {
 
 	return (
 		<button data-slot="button" className={combinedClassName} {...props}>
-      {children}
-      {variant === "square" && ariaLabel && <span className="visually-hidden">{ariaLabel}</span>}
-    </button>
+			{children}
+			{variant === "square" && ariaLabel && <span className="visually-hidden">{ariaLabel}</span>}
+		</button>
 	)
 }
 

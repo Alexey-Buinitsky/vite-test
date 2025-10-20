@@ -4,9 +4,10 @@ function App() {
 	return (
 		<>
 			<Header />
-			<main>
-				<AppPagination />
-			</main>
+        <main>
+          
+          <AppPagination />
+        </main>
 			<Footer />
 		</>
 	)

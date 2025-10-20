@@ -3,7 +3,7 @@ import { Button } from './button'
 export function Pagination({ className, ...props }) {
   return (
     <nav 
-      aria-label="Навигация по страницам" 
+      aria-label="pagination" 
       data-slot="pagination" 
       className={['pagination', className].filter(Boolean).join(' ')} 
       {...props} 
