@@ -1,0 +1,36 @@
+@use '../helpers' as *;
+
+.pagination {
+    &-container {
+        display: flex;
+        flex-direction: column;
+        row-gap: rem(16);
+    }
+
+    &__controls {
+        display: flex;
+        align-items: center;
+        gap: rem(18);
+    }
+
+    &__button {
+        color: var(--color-pagination);
+
+        &--active {
+            background-color: var(--color-accent);
+            color: var(--color-text);
+        }
+
+        &--arrow {
+            color: var(--color-text);
+        }
+
+        &--long {
+            width: rem(64);
+        }
+    }
+
+    &__info {
+        color: #FFFFFF80;
+    }
+}

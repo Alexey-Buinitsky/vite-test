@@ -4,8 +4,9 @@
 @use './base/utils';
 @use './base/globals';
 
-@use './blocks/breadcrumb';
 @use './blocks/button';
+@use './blocks/pagination';
+@use './blocks/breadcrumb';
 @use './blocks/input';
 @use './blocks/title';
 @use './blocks/separator';
