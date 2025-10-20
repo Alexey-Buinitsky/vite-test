@@ -1,0 +1,37 @@
+@use '../helpers' as *;
+
+.breadcrumb {
+
+	&__list {
+		display: flex;
+		flex-wrap: wrap;
+		align-items: center;
+		gap: rem(8);
+
+		margin: 0;
+		padding: 0;
+		list-style: none;
+
+		font-size: rem(14);
+		font-weight: 400;
+		line-height: 1.43;
+		color: var(--color-breadcrumb);
+	}
+
+	// &__item {}
+
+	&__link {
+		display: inline-flex;
+		align-items: center;
+		height: rem(24);
+
+		&:hover {
+			color: var(--color-text-secondary);
+		}
+	}
+
+	&__page,
+	&__separator {
+		color: var(--color-text-secondary);
+	}
+}

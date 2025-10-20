@@ -1,0 +1,76 @@
+@use '../helpers' as *;
+
+.input {
+	padding: 0;
+	height: auto;
+
+	background-color: transparent;
+
+	border: none;
+	outline: none;
+
+	&--search {
+		height: rem(48);
+		width: 100%;
+		padding-inline: rem(16);
+
+		font-weight: 400;
+		font-size: rem(16);
+		color: var(--color-input);
+		background-color: var(--color-bg-input);
+		border-radius: var(--border-radius);
+
+		&::placeholder {
+			font-weight: 400;
+			font-size: rem(16);
+			color: var(--color-input);
+		}
+
+		@include hover {
+      color: var(--color-light);
+      background-color: var(--color-accent);
+
+      &::placeholder {
+        color: var(--color-light);
+      }
+
+      & ~ .input__content {
+        color: var(--color-light);
+      }
+    }
+
+		.input__wrapper--right & {
+			padding-right: rem(42);
+		}
+
+		.input__wrapper--left & {
+			padding-left: rem(42);
+		}
+	}
+}
+
+.input__wrapper {
+	position: relative;
+	display: inline-block;
+	width: 100%;
+
+	&--left .input__content {
+		left: rem(16);
+		right: auto;
+	}
+
+	&--right .input__content {
+		right: rem(16);
+		left: auto;
+	}
+}
+
+.input__content {
+	position: absolute;
+	top: 50%;
+	transform: translateY(-50%);
+	pointer-events: none;
+	display: flex;
+	align-items: center;
+	color: var(--color-input);
+}

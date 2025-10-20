@@ -24,6 +24,10 @@
 		font-size: rem(16);
 		line-height: 1.5;
 		color: var(--color-text);
+
+		@include hover {
+			background-color: var(--color-bg-input)
+		}
 	}
 
 	&--square {
@@ -33,5 +37,9 @@
 		border-radius: var(--border-radius);
 
 		color: var(--color-text);
+
+		@include hover {
+			background-color: var(--color-accent);
+		}
 	}
 }

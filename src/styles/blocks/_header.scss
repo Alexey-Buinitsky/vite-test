@@ -1,0 +1,13 @@
+@use '../helpers' as *;
+
+.header {
+	display: flex;
+	flex-direction: column;
+	gap: rem(24);
+
+	&__top{
+		display: flex;
+		flex-direction: column;
+		gap: rem(6);
+	}
+}
