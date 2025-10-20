@@ -1,0 +1,28 @@
+@use '../helpers' as *;
+
+:root {
+	--color-light: #FFFFFF;
+	--color-dark: #000000;
+
+	--color-bg: #050506;
+	--color-bg-input: #18191A;
+
+	--color-accent: #FF4D00;
+	
+	--color-text: #FAFCFF;
+	--color-text-secondary: #5F6166;
+	--color-breadcrumb: #A8ACB3;
+	--color-input: #909399;
+	--color-pagination: #C0C4CC;
+
+	--border-radius: #{rem(8)};
+
+	--font-family-base: 'Montserrat', sans-serif;
+
+	--container-width: #{rem(1480)};
+	--container-padding-x: #{rem(32)};
+
+	--section-padding-y: #{rem(32)};
+
+	--transition-duration: 0.2s;
+}	

@@ -1,0 +1,46 @@
+@use '../helpers' as *;
+
+body {
+	display: flex;
+	flex-direction: column;
+	font-family: var(--font-family-base);
+	color: var(--color-text);
+	background-color: var(--color-bg);
+}
+
+#root {
+	display: flex;
+	flex-direction: column;
+	flex-grow: 1;
+	
+	overflow-x: hidden;
+}
+
+footer {
+	margin-top: auto;
+}
+
+h2,
+.h2 {
+	font-size: #{rem(32)};
+	font-weight: 600;
+	line-height: 1.5;
+}
+
+a,
+button,
+label,
+input,
+textarea,
+select,
+svg * {
+	transition-duration: var(--transition-duration);
+}
+
+a {
+	color: inherit;
+
+	&[class] {
+		text-decoration: none;
+	}
+}
