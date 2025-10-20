@@ -20,24 +20,26 @@
 		background-color: var(--color-bg-input);
 		border-radius: var(--border-radius);
 
+
 		&::placeholder {
 			font-weight: 400;
 			font-size: rem(16);
 			color: var(--color-input);
+			transition: var(--transition-duration);
 		}
 
 		@include hover {
-      color: var(--color-light);
-      background-color: var(--color-accent);
+			color: var(--color-light);
+			background-color: var(--color-accent);
 
-      &::placeholder {
-        color: var(--color-light);
-      }
+			&::placeholder {
+				color: var(--color-light);
+			}
 
-      & ~ .input__content {
-        color: var(--color-light);
-      }
-    }
+			&~.input__content {
+				color: var(--color-light);
+			}
+		}
 
 		.input__wrapper--right & {
 			padding-right: rem(42);
@@ -73,4 +75,8 @@
 	display: flex;
 	align-items: center;
 	color: var(--color-input);
+
+	svg {
+		transition: var(--transition-duration);
+	}
 }

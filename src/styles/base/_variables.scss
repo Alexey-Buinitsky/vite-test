@@ -3,16 +3,20 @@
 :root {
 	--color-light: #FFFFFF;
 	--color-dark: #000000;
+	--color-accent: #FF4D00;
+
+	--color-text: #FAFCFF;
+	--color-text-secondary: #5F6166;
 
 	--color-bg: #050506;
 	--color-bg-input: #18191A;
+	--color-bg-table-row: #101112;
+	--color-bg-table-cell: #232426;
 
-	--color-accent: #FF4D00;
-	
-	--color-text: #FAFCFF;
-	--color-text-secondary: #5F6166;
-	--color-breadcrumb: #A8ACB3;
 	--color-input: #909399;
+	--color-border: #303133;
+	--color-chevron: #48494D;
+	--color-breadcrumb: #A8ACB3;
 	--color-pagination: #C0C4CC;
 
 	--border-radius: #{rem(8)};
@@ -24,5 +28,5 @@
 
 	--section-margin-y: #{rem(32)};
 
-	--transition-duration: 0.2s;
+	--transition-duration: 0.3s;
 }	

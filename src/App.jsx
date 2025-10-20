@@ -1,10 +1,12 @@
-import { AppPagination, Header, Footer } from "./components/shared"
+import { AppPagination, Header, Footer, AppTable } from "./components/shared"
 
 function App() {
+
 	return (
 		<>
 			<Header />
 			<main>
+				<AppTable />
 				<AppPagination />
 			</main>
 			<Footer />

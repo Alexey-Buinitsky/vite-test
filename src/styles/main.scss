@@ -4,13 +4,14 @@
 @use './base/utils';
 @use './base/globals';
 
+@use './blocks/separator';
 @use './blocks/button';
 @use './blocks/pagination';
 @use './blocks/breadcrumb';
 @use './blocks/input';
-@use './blocks/table';
 @use './blocks/title';
-@use './blocks/separator';
+@use './blocks/select';
+@use './blocks/table';
 
 @use './blocks/header';
 @use './blocks/footer';

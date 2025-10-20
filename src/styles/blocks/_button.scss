@@ -30,9 +30,8 @@
 		}
 	}
 
-	&--square {
-		@include square(rem(48));
-
+	&--square,
+	&--little-square {
 		background-color: var(--color-bg-input);
 		border-radius: var(--border-radius);
 
@@ -41,5 +40,13 @@
 		@include hover {
 			background-color: var(--color-accent);
 		}
+	}
+
+	&--square {
+		@include square(rem(48));
+	}
+
+	&--little-square {
+		@include square(rem(24));
 	}
 }

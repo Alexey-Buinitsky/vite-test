@@ -1,6 +1,133 @@
 @use '../helpers' as *;
 
-// .table {}
+// TABLE
+
+.table-container {
+	position: relative;
+	width: 100%;
+	overflow-x: auto;
+	margin-block: var(--section-margin-y);
+}
+
+.table {
+	width: 100%;
+
+	font-weight: 600;
+	font-size: rem(12);
+	line-height: 1.33;
+
+	border-spacing: 0 rem(8);
+	border-collapse: separate;
+
+	&__head {
+		height: rem(58);
+		padding: rem(21) rem(18);
+		text-align: left;
+		color: var(--color-text-secondary);
+		white-space: nowrap;
+
+		&--not-sortable {
+			padding: 0;
+		}
+
+		&--sortable {
+			cursor: pointer;
+			user-select: none;
+
+			@include hover {
+
+				.table__head-sort {
+					color: var(--color-accent);
+				}
+			}
+		}
+
+		&--active {
+
+			.table__head-sort {
+				color: var(--color-accent);
+			}
+		}
+
+		&-content {
+			display: flex;
+			align-items: center;
+			gap: rem(6);
+		}
+
+		&-sort {
+			display: flex;
+			align-items: center;
+			color: var(--color-text-secondary);
+			transition: all var(--transition-duration);
+
+			&--asc {
+				transform: rotate(0deg);
+			}
+
+			&--desc {
+				transform: rotate(180deg);
+			}
+
+			svg {
+				width: rem(12);
+				height: rem(12);
+			}
+		}
+
+		&-icon {
+			display: flex;
+			align-items: center;
+			cursor: help;
+		}
+	}
+
+	&__body {
+
+		.table__row {
+
+			background-color: var(--color-bg-table-row);
+
+			.table__cell:first-child {
+				border-top-left-radius: rem(8);
+				border-bottom-left-radius: rem(8);
+			}
+
+			.table__cell:last-child {
+				border-top-right-radius: rem(8);
+				border-bottom-right-radius: rem(8);
+			}
+		}
+	}
+
+	&__cell {
+		padding: rem(22) rem(16);
+		color: var(--color-text);
+		white-space: nowrap;
+
+		&--actions {
+			padding: 0;
+		}
+
+		&:has(.table__cell-span) {
+			cursor: pointer;
+		}
+
+		@include hover {
+			.table__cell-span {
+				background-color: var(--color-bg-table-cell);
+			}
+		}
+
+		&-span {
+			padding: rem(4) rem(8);
+			border-radius: var(--border-radius);
+			transition: var(--transition-duration)
+		}
+	}
+}
+
+// TABLE ACTIONS
 
 .table-actions {
 	display: flex;
