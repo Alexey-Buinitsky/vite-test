@@ -1,0 +1,16 @@
+@use '../helpers' as *;
+
+.separator {
+
+	background-color: var(--color-bg-input);
+
+	&--horizontal {
+		width: 100%;
+		height: 2px;
+	}
+
+	&--vertical {
+		width: 2px;
+		height: 100%;
+	}
+}

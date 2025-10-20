@@ -1,0 +1,32 @@
+@use '../helpers' as *;
+
+// .table {}
+
+.table-actions {
+	display: flex;
+	align-items: center;
+	gap: rem(20);
+
+	&__search {
+		max-width: rem(380);
+		width: 100%;
+	}
+
+	&__separator {
+		height: rem(48);
+	}
+
+	&__controls {
+		flex-grow: 1;
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+		gap: rem(16);
+	}
+
+	&__square-controls {
+		display: flex;
+		align-items: center;
+		gap: rem(16);
+	}
+}
