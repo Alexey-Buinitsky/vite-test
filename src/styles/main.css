@@ -387,6 +387,9 @@ a[class] {
 .pagination__button--long {
   width: 4rem;
 }
+.pagination__ellipsis {
+  pointer-events: none;
+}
 .pagination__info {
   color: rgba(255, 255, 255, 0.5019607843);
 }

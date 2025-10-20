@@ -30,6 +30,10 @@
         }
     }
 
+    &__ellipsis {
+        pointer-events: none;
+    }
+
     &__info {
         color: #FFFFFF80;
     }
