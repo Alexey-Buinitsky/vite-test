@@ -364,12 +364,6 @@ a[class] {
   }
 }
 
-.pagination-container {
-  display: flex;
-  flex-direction: column;
-  row-gap: 1rem;
-  margin-block: var(--section-margin-y);
-}
 .pagination__controls {
   display: flex;
   align-items: center;
@@ -394,6 +388,13 @@ a[class] {
 .pagination__info {
   color: var(--color-light);
   opacity: 0.5;
+}
+
+.pagination-container {
+  display: flex;
+  flex-direction: column;
+  row-gap: 1rem;
+  margin-block: var(--section-margin-y);
 }
 
 .breadcrumb__list {

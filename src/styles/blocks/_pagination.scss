@@ -1,13 +1,6 @@
 @use '../helpers' as *;
 
 .pagination {
-    &-container {
-        display: flex;
-        flex-direction: column;
-        row-gap: rem(16);
-				margin-block: var(--section-margin-y);
-    }
-
     &__controls {
         display: flex;
         align-items: center;
@@ -37,6 +30,13 @@
 
     &__info {
         color: var(--color-light);
-				opacity: .5;
+		opacity: .5;
     }
+}
+
+.pagination-container {
+    display: flex;
+    flex-direction: column;
+    row-gap: rem(16);
+    margin-block: var(--section-margin-y);
 }
