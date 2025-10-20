@@ -1,0 +1,37 @@
+@use '../helpers' as *;
+
+.button {
+	@include flex-center;
+
+	padding: 0;
+	height: auto;
+
+	background-color: transparent;
+
+	border: none;
+	outline: none;
+	white-space: nowrap;
+
+	&--accent {
+		height: rem(48);
+		padding-inline: rem(16);
+		gap: rem(12);
+
+		background-color: var(--color-accent);
+		border-radius: var(--border-radius);
+
+		font-weight: 600;
+		font-size: rem(16);
+		line-height: 1.5;
+		color: var(--color-text);
+	}
+
+	&--square {
+		@include square(rem(48));
+
+		background-color: var(--color-bg-input);
+		border-radius: var(--border-radius);
+
+		color: var(--color-text);
+	}
+}
