@@ -21,15 +21,15 @@ export const useSelectDropdownPosition = (isOpen, triggerRef) => {
 			if (spaceBelow < CONTENT_HEIGHT && rect.top > CONTENT_HEIGHT) {
 				setContentStyle({
 					position: 'fixed',
-					bottom: `${viewportHeight - rect.top + window.scrollY}px`,
-					left: `${rect.left + window.scrollX}px`,
+					bottom: `${viewportHeight - rect.top}px`,
+					left: `${rect.left}px`,
 					zIndex: Z_INDEX
 				})
 			} else {
 				setContentStyle({
 					position: 'fixed',
-					top: `${rect.bottom + window.scrollY}px`,
-					left: `${rect.left + window.scrollX}px`,
+					top: `${rect.bottom}px`,
+					left: `${rect.left}px`,
 					zIndex: Z_INDEX
 				})
 			}

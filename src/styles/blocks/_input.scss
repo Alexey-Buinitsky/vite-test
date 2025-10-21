@@ -20,7 +20,6 @@
 		background-color: var(--color-bg-input);
 		border-radius: var(--border-radius);
 
-
 		&::placeholder {
 			font-weight: 400;
 			font-size: rem(16);
@@ -29,6 +28,20 @@
 		}
 
 		@include hover {
+			color: var(--color-light);
+			background-color: var(--color-accent);
+
+			&::placeholder {
+				color: var(--color-light);
+			}
+
+			&~.input__content {
+				color: var(--color-light);
+			}
+		}
+
+		&:focus,
+		&:active {
 			color: var(--color-light);
 			background-color: var(--color-accent);
 

@@ -33,17 +33,9 @@
 		&--sortable {
 			cursor: pointer;
 			user-select: none;
-
-			@include hover {
-
-				.table__head-sort {
-					color: var(--color-accent);
-				}
-			}
 		}
 
 		&--active {
-
 			.table__head-sort {
 				color: var(--color-accent);
 			}
@@ -68,14 +60,9 @@
 			&--desc {
 				transform: rotate(180deg);
 			}
-
-			svg {
-				width: rem(12);
-				height: rem(12);
-			}
 		}
 
-		&-icon {
+		&-tooltip {
 			display: flex;
 			align-items: center;
 			cursor: help;

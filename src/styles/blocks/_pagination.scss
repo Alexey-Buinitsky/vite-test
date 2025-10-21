@@ -1,42 +1,48 @@
 @use '../helpers' as *;
 
 .pagination {
-    &__controls {
-        display: flex;
-        align-items: center;
-        gap: rem(18);
-    }
+	&__controls {
+		display: flex;
+		align-items: center;
+		gap: rem(18);
+	}
 
-    &__button {
-        color: var(--color-pagination);
+	&__button {
+		color: var(--color-pagination);
 
-        &--active {
-            background-color: var(--color-accent);
-            color: var(--color-text);
-        }
+		&:disabled {
+			color: var(--color-light);
+			opacity: .4;
+			pointer-events: none;
+		}
 
-        &--arrow {
-            color: var(--color-text);
-        }
+		&--active {
+			background-color: var(--color-accent);
+			color: var(--color-text);
+		}
 
-        &--long {
-            width: rem(64);
-        }
-    }
+		&--arrow {
+			color: var(--color-text);
+		}
 
-    &__ellipsis {
-        pointer-events: none;
-    }
+		&--long {
+			width: rem(64);
+		}
+	}
 
-    &__info {
-        color: var(--color-light);
+	&__ellipsis {
+		pointer-events: none;
+	}
+
+	&__info {
+		color: var(--color-light);
 		opacity: .5;
-    }
+	}
 }
 
 .pagination-container {
-    display: flex;
-    flex-direction: column;
-    row-gap: rem(16);
-    margin-block: var(--section-margin-y);
+	display: flex;
+	flex-direction: column;
+	row-gap: rem(16);
+	margin-block: var(--section-margin-y);
 }

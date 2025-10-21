@@ -352,6 +352,9 @@ a[class] {
     background-color: var(--color-bg-input);
   }
 }
+.button--accent:focus-visible {
+  background-color: var(--color-bg-input);
+}
 .button--square, .button--little-square {
   background-color: var(--color-bg-input);
   border-radius: var(--border-radius);
@@ -366,6 +369,9 @@ a[class] {
   .button--square:active, .button--little-square:active {
     background-color: var(--color-accent);
   }
+}
+.button--square:focus-visible, .button--little-square:focus-visible {
+  background-color: var(--color-accent);
 }
 .button--square {
   width: 3rem;
@@ -383,6 +389,11 @@ a[class] {
 }
 .pagination__button {
   color: var(--color-pagination);
+}
+.pagination__button:disabled {
+  color: var(--color-light);
+  opacity: 0.4;
+  pointer-events: none;
 }
 .pagination__button--active {
   background-color: var(--color-accent);
@@ -418,7 +429,6 @@ a[class] {
   padding: 0;
   list-style: none;
   font-size: 0.875rem;
-  font-weight: 400;
   line-height: 1.43;
   color: var(--color-breadcrumb);
 }
@@ -480,6 +490,16 @@ a[class] {
   .input--search:active ~ .input__content {
     color: var(--color-light);
   }
+}
+.input--search:focus, .input--search:active {
+  color: var(--color-light);
+  background-color: var(--color-accent);
+}
+.input--search:focus::placeholder, .input--search:active::placeholder {
+  color: var(--color-light);
+}
+.input--search:focus ~ .input__content, .input--search:active ~ .input__content {
+  color: var(--color-light);
 }
 .input__wrapper--right .input--search {
   padding-right: 2.625rem;
@@ -571,6 +591,9 @@ a[class] {
   border-radius: 0.5rem;
   border: 1px solid var(--color-pagination);
   outline: none;
+}
+.select__trigger:focus-visible {
+  border-color: var(--color-accent);
 }
 .select__trigger[data-open=true] .select__chevron {
   transform: rotate(180deg);
@@ -679,16 +702,6 @@ a[class] {
   cursor: pointer;
   user-select: none;
 }
-@media (any-hover: hover) {
-  .table__head--sortable:hover .table__head-sort {
-    color: var(--color-accent);
-  }
-}
-@media (any-hover: none) {
-  .table__head--sortable:active .table__head-sort {
-    color: var(--color-accent);
-  }
-}
 .table__head--active .table__head-sort {
   color: var(--color-accent);
 }
@@ -709,11 +722,7 @@ a[class] {
 .table__head-sort--desc {
   transform: rotate(180deg);
 }
-.table__head-sort svg {
-  width: 0.75rem;
-  height: 0.75rem;
-}
-.table__head-icon {
+.table__head-tooltip {
   display: flex;
   align-items: center;
   cursor: help;

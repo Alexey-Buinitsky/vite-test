@@ -28,6 +28,10 @@
 		@include hover {
 			background-color: var(--color-bg-input)
 		}
+
+		&:focus-visible {
+			background-color: var(--color-bg-input);
+		}
 	}
 
 	&--square,
@@ -38,6 +42,10 @@
 		color: var(--color-text);
 
 		@include hover {
+			background-color: var(--color-accent);
+		}
+
+		&:focus-visible {
 			background-color: var(--color-accent);
 		}
 	}
